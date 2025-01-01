@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-ressources :users do
-  ressources :tasks
+resources :users do
+  resources :tasks
 end
   get "up" => "rails/health#show", as: :rails_health_check
 
